@@ -73,6 +73,13 @@
         <artifactId>extentreports</artifactId>
         <version>${extentreports.version}</version>
     </dependency>
+    
+    <dependency>
+    <groupId>org.apache.commons</groupId>
+    <artifactId>commons-email</artifactId>
+    <version>1.6.0</version>
+    <scope>compile</scope>
+   </dependency>
 </dependencies>
   
 </project>

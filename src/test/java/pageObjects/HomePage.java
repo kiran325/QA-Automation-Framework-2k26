@@ -16,11 +16,18 @@ public class HomePage extends BasePage{
 	@FindBy(xpath = "//a[normalize-space()='Register']")
 	WebElement InkRegister;
 	
+	@FindBy(linkText = "Login")
+	WebElement linkLogin;
+	
 	public void clickMyAccount() {
 		InkMyaccount.click();
 	}
 	
 	public void clickRegister() {
 		InkRegister.click();
+	}
+	
+	public void clickLogin() {
+		linkLogin.click();
 	}
 }

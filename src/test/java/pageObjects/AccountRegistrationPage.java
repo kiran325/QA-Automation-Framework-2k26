@@ -1,12 +1,10 @@
 package pageObjects;
 
-import java.time.Duration;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
+
 
 public class AccountRegistrationPage extends BasePage{
 
@@ -30,7 +28,7 @@ public class AccountRegistrationPage extends BasePage{
 	WebElement txtPassword;
 	
 	@FindBy(xpath="//input[@id='input-confirm']")
-	WebElement txtConfirm;
+	WebElement pwdConfirm;
 	
 	@FindBy(xpath="//label[normalize-space()='Yes']")
 	WebElement radioNewsletter;
@@ -61,8 +59,8 @@ public class AccountRegistrationPage extends BasePage{
 	public void setPassword(String pwd) {
 		txtPassword.sendKeys(pwd);
 	}
-	public void setConfirm(String pwd) {
-		txtConfirm.sendKeys(pwd);
+	public void setpwdConfirm(String pwd) {
+		pwdConfirm.sendKeys(pwd);
 	}
 	public void setNewsletter() {
 		radioNewsletter.click();
