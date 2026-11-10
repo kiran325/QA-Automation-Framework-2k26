@@ -109,13 +109,19 @@ public class ExtentReportManager implements ITestListener{
 	public void onFinish(ITestContext context) {
         extent.flush(); // IMPORTANT: Write all report data into HTML file
         System.out.println("Extent Report Generated Successfully");
-        String pathExtentReport = System.getProperty("user.dir")+"\\reports\\"+repName;
+        String pathExtentReport = System.getProperty("user.dir")+ File.separator + "reports"+ File.separator + repName;
         File extentReport = new File(pathExtentReport);
+
         try {
-        	Desktop.getDesktop().browse(extentReport.toURI());
-        }
-        catch(IOException e) {
-        	e.printStackTrace();
+            if (Desktop.isDesktopSupported()&& extentReport.exists()) {
+                Desktop.getDesktop().open(extentReport);
+                System.out.println("Extent Report Opened Successfully");
+            }
+            else {
+                System.out.println("Report file not found: " + extentReport.getAbsolutePath());
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
         }
         
      /*   try {

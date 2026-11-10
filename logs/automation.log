@@ -19,3 +19,10 @@
 2026-11-10 20:09:43.116 [main] INFO  TC001_AccountRegistrationTest - **** Finished TC001_AccountRegistrationTest
 2026-11-10 20:09:45.786 [main] INFO  TC002_LoginTest - ***** Starting Login Test ****
 2026-11-10 20:09:48.248 [main] INFO  TC002_LoginTest - ***** Finished Login Test ****
+2026-11-10 20:17:04.266 [main] INFO  TC001_AccountRegistrationTest - **** Starting TC001_AccountRegistrationTest
+2026-11-10 20:17:04.620 [main] INFO  TC001_AccountRegistrationTest - Clicked on Register Link
+2026-11-10 20:17:04.622 [main] INFO  TC001_AccountRegistrationTest - Providing Customer details
+2026-11-10 20:17:07.226 [main] INFO  TC001_AccountRegistrationTest - Validating expected message
+2026-11-10 20:17:07.244 [main] INFO  TC001_AccountRegistrationTest - **** Finished TC001_AccountRegistrationTest
+2026-11-10 20:17:11.190 [main] INFO  TC002_LoginTest - ***** Starting Login Test ****
+2026-11-10 20:17:13.348 [main] INFO  TC002_LoginTest - ***** Finished Login Test ****
