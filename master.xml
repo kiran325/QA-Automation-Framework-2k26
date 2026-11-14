@@ -9,6 +9,7 @@
 </listeners>
 
   <test name="Test">  
+  <parameter name="os" value="macOS"></parameter>
   <parameter name="browser" value="chrome"></parameter>
     <classes>
      <class name="testCases.TC001_AccountRegistrationTest"/> 
