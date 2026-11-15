@@ -5,6 +5,36 @@
   <version>0.0.1-SNAPSHOT</version>
   <description>End-to-end automation framework for 2k26 project</description>
   
+  <build>
+    <plugins>
+
+        <!-- Maven Compiler Plugin -->
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-compiler-plugin</artifactId>
+            <version>3.14.1</version>
+            <configuration>
+                <release>17</release>
+            </configuration>
+        </plugin>
+
+        <!-- Maven Surefire Plugin -->
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-surefire-plugin</artifactId>
+            <version>3.5.4</version>
+            <configuration>
+                <suiteXmlFiles>
+                    <suiteXmlFile>
+                        master.xml
+                    </suiteXmlFile>
+                </suiteXmlFiles>
+            </configuration>
+        </plugin>
+
+    </plugins>
+</build>
+  
   
   <properties>
     <maven.compiler.source>17</maven.compiler.source>

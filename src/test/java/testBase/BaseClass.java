@@ -60,14 +60,10 @@ public class BaseClass {
             DesiredCapabilities capabilities = new DesiredCapabilities();
 
             // Set Operating System Platform
-            if (os.equalsIgnoreCase("windows")) { capabilities.setPlatform(Platform.WINDOWS);
-            }
-            else if (os.equalsIgnoreCase("mac")) { capabilities.setPlatform(Platform.MAC);
-            }
-            else if (os.equalsIgnoreCase("linux")) { capabilities.setPlatform(Platform.LINUX);
-            }
-            else { throw new IllegalArgumentException("Invalid OS specified: " + os);
-            }
+            if (os.equalsIgnoreCase("windows")) { capabilities.setPlatform(Platform.WINDOWS);}
+            else if (os.equalsIgnoreCase("mac")) { capabilities.setPlatform(Platform.MAC);}
+            else if (os.equalsIgnoreCase("linux")) { capabilities.setPlatform(Platform.LINUX);}
+            else { throw new IllegalArgumentException("Invalid OS specified: " + os); }
 
             // Set Browser
             switch (br.toLowerCase()) {

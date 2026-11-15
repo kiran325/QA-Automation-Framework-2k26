@@ -1,13 +1,13 @@
-2026-11-13 20:51:18.090 [main] INFO  TC001_AccountRegistrationTest - Browser launched successfully: chrome
-2026-11-13 20:51:18.104 [main] INFO  TC001_AccountRegistrationTest - Execution environment: local
-2026-11-13 20:51:18.122 [main] INFO  TC001_AccountRegistrationTest - **** Starting TC001_AccountRegistrationTest
-2026-11-13 20:51:18.614 [main] INFO  TC001_AccountRegistrationTest - Clicked on Register Link
-2026-11-13 20:51:18.616 [main] INFO  TC001_AccountRegistrationTest - Providing Customer details
-2026-11-13 20:51:20.965 [main] INFO  TC001_AccountRegistrationTest - Validating expected message
-2026-11-13 20:51:20.984 [main] INFO  TC001_AccountRegistrationTest - **** Finished TC001_AccountRegistrationTest
-2026-11-13 20:51:21.085 [main] INFO  TC001_AccountRegistrationTest - Browser closed successfully
-2026-11-13 20:51:27.820 [main] INFO  TC002_LoginTest - Browser launched successfully: chrome
-2026-11-13 20:51:27.822 [main] INFO  TC002_LoginTest - Execution environment: local
-2026-11-13 20:51:27.835 [main] INFO  TC002_LoginTest - ***** Starting Login Test ****
-2026-11-13 20:51:29.824 [main] INFO  TC002_LoginTest - ***** Finished Login Test ****
-2026-11-13 20:51:29.927 [main] INFO  TC002_LoginTest - Browser closed successfully
+2026-11-14 20:42:44.996 [main] INFO  TC001_AccountRegistrationTest - Browser launched successfully: chrome
+2026-11-14 20:42:45.007 [main] INFO  TC001_AccountRegistrationTest - Execution environment: local
+2026-11-14 20:42:45.013 [main] INFO  TC001_AccountRegistrationTest - **** Starting TC001_AccountRegistrationTest
+2026-11-14 20:42:45.660 [main] INFO  TC001_AccountRegistrationTest - Clicked on Register Link
+2026-11-14 20:42:45.662 [main] INFO  TC001_AccountRegistrationTest - Providing Customer details
+2026-11-14 20:42:48.174 [main] INFO  TC001_AccountRegistrationTest - Validating expected message
+2026-11-14 20:42:48.194 [main] INFO  TC001_AccountRegistrationTest - **** Finished TC001_AccountRegistrationTest
+2026-11-14 20:42:48.304 [main] INFO  TC001_AccountRegistrationTest - Browser closed successfully
+2026-11-14 20:42:50.625 [main] INFO  TC002_LoginTest - Browser launched successfully: chrome
+2026-11-14 20:42:50.626 [main] INFO  TC002_LoginTest - Execution environment: local
+2026-11-14 20:42:50.628 [main] INFO  TC002_LoginTest - ***** Starting Login Test ****
+2026-11-14 20:42:52.018 [main] INFO  TC002_LoginTest - ***** Finished Login Test ****
+2026-11-14 20:42:52.104 [main] INFO  TC002_LoginTest - Browser closed successfully
