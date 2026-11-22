@@ -14,6 +14,7 @@ import java.time.Duration;
 import java.util.Date;
 import java.util.Properties;
 
+import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -34,8 +35,8 @@ import org.testng.annotations.Parameters;
 
 public class BaseClass {
 
-    public WebDriver driver;
-    public Logger logger;
+	protected WebDriver driver;
+	protected Logger logger;
     public Properties p;
 
     @BeforeClass(groups = {"sanity", "regression", "master"})
@@ -104,13 +105,22 @@ public class BaseClass {
         logger.info("Browser launched successfully: " + br);
         logger.info("Execution environment: " + executionEnv);
     }
-
-    @AfterClass(groups = {"sanity", "regression", "master"})
+    
+    @AfterClass(alwaysRun = true)
     public void tearDown() {
 
-        if (driver != null) {
-            driver.quit();
-            logger.info("Browser closed successfully");
+        try {
+            if (driver != null) {
+                driver.quit();
+
+                logger.info("Browser closed successfully");
+            }
+        }
+        catch (Exception e) {
+            logger.error("Error while closing browser: ", e);
+        }
+        finally {
+            driver = null;
         }
     }
 
@@ -133,19 +143,29 @@ public class BaseClass {
 
     // Capture Screenshot
     public String captureScreen(String tname) throws IOException {
+    	
+    	if (driver == null) {
+            System.out.println("Screenshot failed: WebDriver is null");
+            return null;
+        }
 
+    	try {
         String timeStamp = new SimpleDateFormat("yyyyMMddHHmmss").format(new Date());
         TakesScreenshot takesScreenshot = (TakesScreenshot) driver;
-        File sourceFile = takesScreenshot.getScreenshotAs(OutputType.FILE);
-        // Create screenshots directory
+        File sourceFile = takesScreenshot.getScreenshotAs(OutputType.FILE); // Create screenshots directory
         String targetDirectory = System.getProperty("user.dir") + File.separator + "screenshots";
-        Files.createDirectories(Paths.get(targetDirectory));
-        // Create target screenshot path
+        Files.createDirectories(Paths.get(targetDirectory)); // Create target screenshot path
         String targetFilePath = targetDirectory + File.separator + tname + "_" + timeStamp + ".png";
         Path targetPath = Paths.get(targetFilePath);
         // Copy screenshot to target location
         Files.copy(sourceFile.toPath(), targetPath,StandardCopyOption.REPLACE_EXISTING);
 
         return targetFilePath;
+        
+    	}
+    	catch (Exception e) {
+            System.out.println("Screenshot capture failed: " + e.getMessage());
+            return null;
+        }
     }
 }

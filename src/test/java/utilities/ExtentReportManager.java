@@ -85,18 +85,33 @@ public class ExtentReportManager implements ITestListener{
 		test.log(Status.PASS, "Test case PASSED is:"+ result.getName()); // update status p/f/s
 	}
 
+	@Override
 	public void onTestFailure(ITestResult result) {
-		test = extent.createTest(result.getName()); // create a new entry in the report
-		test.assignCategory(result.getMethod().getGroups()); 
-		test.log(Status.FAIL, "Test Case FAILED is:"+ result.getName()); // update status p/f/s
-		test.log(Status.INFO, result.getThrowable().getMessage());// display console Error
-		
-		try {
-			String imgPath = new BaseClass().captureScreen(result.getName());
-			test.addScreenCaptureFromPath(imgPath);
-		} catch(IOException e1) {
-			e1.printStackTrace();
-		}
+	    test = extent.createTest(result.getName());
+	    test.assignCategory(result.getMethod().getGroups());
+	    test.log(Status.FAIL, "Test Case FAILED: " + result.getName());
+
+	    if (result.getThrowable() != null) {
+	        test.log(Status.INFO, result.getThrowable().getMessage());
+	    }
+
+	    try {
+	        // Get the actual test class object containing the WebDriver
+	        BaseClass base = (BaseClass) result.getInstance();
+	        // Capture screenshot using the existing WebDriver
+	        String imgPath = base.captureScreen(result.getName());
+	        // Attach screenshot only when the path is valid
+	        if (imgPath != null && !imgPath.isEmpty()) {
+	            test.addScreenCaptureFromPath(imgPath);
+	            test.log(Status.INFO, "Screenshot attached successfully");
+	        } else {
+	            test.warning("Screenshot could not be captured.");
+	        }
+
+	    } catch (Exception e) {
+	        test.warning("Error while capturing screenshot: " + e.getMessage());
+	        e.printStackTrace();
+	    }
 	}
 	
 	public void onTestSkipped(ITestResult result) {

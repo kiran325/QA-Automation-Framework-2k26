@@ -1,23 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-11-13T20:51:06 IST" name="Master Suite" finished-at="2026-11-13T20:51:29 IST" duration-ms="23392">
+  <suite started-at="2026-11-19T19:14:01 IST" name="Master Suite" finished-at="2026-11-19T19:14:36 IST" duration-ms="34817">
     <groups>
-      <group name="regression">
-        <method signature="TC001_AccountRegistrationTest.verify_account_registration()[pri:0, instance:testCases.TC001_AccountRegistrationTest@1c1bbc4e]" name="verify_account_registration" class="testCases.TC001_AccountRegistrationTest"/>
-      </group> <!-- regression -->
-      <group name="sanity">
-        <method signature="TC002_LoginTest.verify_login()[pri:0, instance:testCases.TC002_LoginTest@24269709]" name="verify_login" class="testCases.TC002_LoginTest"/>
-      </group> <!-- sanity -->
-      <group name="master">
-        <method signature="TC001_AccountRegistrationTest.verify_account_registration()[pri:0, instance:testCases.TC001_AccountRegistrationTest@1c1bbc4e]" name="verify_account_registration" class="testCases.TC001_AccountRegistrationTest"/>
-        <method signature="TC002_LoginTest.verify_login()[pri:0, instance:testCases.TC002_LoginTest@24269709]" name="verify_login" class="testCases.TC002_LoginTest"/>
-      </group> <!-- master -->
     </groups>
-    <test started-at="2026-11-13T20:51:06 IST" name="Test" finished-at="2026-11-13T20:51:29 IST" duration-ms="23392">
-      <class name="testCases.TC002_LoginTest">
-        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC002_LoginTest@24269709]" started-at="2026-11-13T20:51:21 IST" name="setUp" finished-at="2026-11-13T20:51:27 IST" duration-ms="6738" status="PASS">
+    <test started-at="2026-11-19T19:14:01 IST" name="Test" finished-at="2026-11-19T19:14:36 IST" duration-ms="34817">
+      <class name="testCases.TC005_AddToCartPageTest">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC005_AddToCartPageTest@3a52dba3]" started-at="2026-11-19T19:14:06 IST" name="setUp" finished-at="2026-11-19T19:14:08 IST" duration-ms="2493" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -33,17 +23,17 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verify_login()[pri:0, instance:testCases.TC002_LoginTest@24269709]" started-at="2026-11-13T20:51:27 IST" name="verify_login" finished-at="2026-11-13T20:51:29 IST" duration-ms="1994" status="PASS">
+        <test-method signature="verifyAddProductToCart()[pri:0, instance:testCases.TC005_AddToCartPageTest@3a52dba3]" started-at="2026-11-19T19:14:08 IST" name="verifyAddProductToCart" finished-at="2026-11-19T19:14:10 IST" duration-ms="1408" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verify_login -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC002_LoginTest@24269709]" started-at="2026-11-13T20:51:29 IST" name="tearDown" finished-at="2026-11-13T20:51:29 IST" duration-ms="100" status="PASS">
+        </test-method> <!-- verifyAddProductToCart -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC005_AddToCartPageTest@3a52dba3]" started-at="2026-11-19T19:14:10 IST" name="tearDown" finished-at="2026-11-19T19:14:10 IST" duration-ms="85" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- testCases.TC002_LoginTest -->
-      <class name="testCases.TC001_AccountRegistrationTest">
-        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC001_AccountRegistrationTest@1c1bbc4e]" started-at="2026-11-13T20:51:06 IST" name="setUp" finished-at="2026-11-13T20:51:18 IST" duration-ms="11465" status="PASS">
+      </class> <!-- testCases.TC005_AddToCartPageTest -->
+      <class name="testCases.TC004_SearchProductTest">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC004_SearchProductTest@1ce24091]" started-at="2026-11-19T19:14:01 IST" name="setUp" finished-at="2026-11-19T19:14:05 IST" duration-ms="4186" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -59,15 +49,92 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verify_account_registration()[pri:0, instance:testCases.TC001_AccountRegistrationTest@1c1bbc4e]" started-at="2026-11-13T20:51:18 IST" name="verify_account_registration" finished-at="2026-11-13T20:51:20 IST" duration-ms="2869" status="PASS">
+        <test-method signature="verifySearchProduct()[pri:0, instance:testCases.TC004_SearchProductTest@1ce24091]" started-at="2026-11-19T19:14:05 IST" name="verifySearchProduct" finished-at="2026-11-19T19:14:06 IST" duration-ms="480" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verify_account_registration -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC001_AccountRegistrationTest@1c1bbc4e]" started-at="2026-11-13T20:51:20 IST" name="tearDown" finished-at="2026-11-13T20:51:21 IST" duration-ms="92" status="PASS">
+        </test-method> <!-- verifySearchProduct -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC004_SearchProductTest@1ce24091]" started-at="2026-11-19T19:14:06 IST" name="tearDown" finished-at="2026-11-19T19:14:06 IST" duration-ms="92" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- testCases.TC001_AccountRegistrationTest -->
+      </class> <!-- testCases.TC004_SearchProductTest -->
+      <class name="testCases.TC006_EndtoEndTest">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC006_EndtoEndTest@2a5c8d3f]" started-at="2026-11-19T19:14:10 IST" name="setUp" finished-at="2026-11-19T19:14:12 IST" duration-ms="1925" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[macOS]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyEndToEndPurchaseFlow()[pri:0, instance:testCases.TC006_EndtoEndTest@2a5c8d3f]" started-at="2026-11-19T19:14:12 IST" name="verifyEndToEndPurchaseFlow" finished-at="2026-11-19T19:14:34 IST" duration-ms="22326" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for element found by By.xpath: //input[@name='account' and @value='guest'] to be clickable, but the element was not found: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@name='account' and @value='guest']"}.
+(tried for 20 seconds with 500 milliseconds interval)
+Build info: version: '4.52.0', revision: '5b37fd4 5b37fd4d98c08d6a43a0790417f91b8f6f32fb5c'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '26.6.2', java.version: '23'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 157.0.8103.79, chrome: {chromedriverVersion: 157.0.8103.78 (4b3d0dabb825..., userDataDir: /var/folders/0b/hf85j5911f5...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53333}, goog:processID: 26569, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:53333/devtoo..., se:cdpVersion: 157.0.8103.79, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Macintosh; Int..., webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 13f72870abca8a09706086aeb78dbe14]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element found by By.xpath: //input[@name='account' and @value='guest'] to be clickable, but the element was not found: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@name='account' and @value='guest']"}.
+(tried for 20 seconds with 500 milliseconds interval)
+Build info: version: '4.52.0', revision: '5b37fd4 5b37fd4d98c08d6a43a0790417f91b8f6f32fb5c'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '26.6.2', java.version: '23'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 157.0.8103.79, chrome: {chromedriverVersion: 157.0.8103.78 (4b3d0dabb825..., userDataDir: /var/folders/0b/hf85j5911f5...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53333}, goog:processID: 26569, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:53333/devtoo..., se:cdpVersion: 157.0.8103.79, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Macintosh; Int..., webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 13f72870abca8a09706086aeb78dbe14
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:234)
+at pageObjects.CheckoutPage.selectGuestCheckout(CheckoutPage.java:46)
+at testCases.TC006_EndtoEndTest.verifyEndToEndPurchaseFlow(TC006_EndtoEndTest.java:52)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:744)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyEndToEndPurchaseFlow -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC006_EndtoEndTest@2a5c8d3f]" started-at="2026-11-19T19:14:35 IST" name="tearDown" finished-at="2026-11-19T19:14:36 IST" duration-ms="1115" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCases.TC006_EndtoEndTest -->
     </test> <!-- Test -->
   </suite> <!-- Master Suite -->
 </testng-results>

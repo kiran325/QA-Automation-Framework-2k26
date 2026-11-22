@@ -1,13 +1,60 @@
-2026-11-14 20:42:44.996 [main] INFO  TC001_AccountRegistrationTest - Browser launched successfully: chrome
-2026-11-14 20:42:45.007 [main] INFO  TC001_AccountRegistrationTest - Execution environment: local
-2026-11-14 20:42:45.013 [main] INFO  TC001_AccountRegistrationTest - **** Starting TC001_AccountRegistrationTest
-2026-11-14 20:42:45.660 [main] INFO  TC001_AccountRegistrationTest - Clicked on Register Link
-2026-11-14 20:42:45.662 [main] INFO  TC001_AccountRegistrationTest - Providing Customer details
-2026-11-14 20:42:48.174 [main] INFO  TC001_AccountRegistrationTest - Validating expected message
-2026-11-14 20:42:48.194 [main] INFO  TC001_AccountRegistrationTest - **** Finished TC001_AccountRegistrationTest
-2026-11-14 20:42:48.304 [main] INFO  TC001_AccountRegistrationTest - Browser closed successfully
-2026-11-14 20:42:50.625 [main] INFO  TC002_LoginTest - Browser launched successfully: chrome
-2026-11-14 20:42:50.626 [main] INFO  TC002_LoginTest - Execution environment: local
-2026-11-14 20:42:50.628 [main] INFO  TC002_LoginTest - ***** Starting Login Test ****
-2026-11-14 20:42:52.018 [main] INFO  TC002_LoginTest - ***** Finished Login Test ****
-2026-11-14 20:42:52.104 [main] INFO  TC002_LoginTest - Browser closed successfully
+2026-11-19 18:47:33.748 [main] INFO  TC004_SearchProductTest - Browser launched successfully: chrome
+2026-11-19 18:47:33.767 [main] INFO  TC004_SearchProductTest - Execution environment: local
+2026-11-19 18:47:33.789 [main] INFO  TC004_SearchProductTest - Starting TC004 - Search Product
+2026-11-19 18:47:34.331 [main] INFO  TC004_SearchProductTest - Product search results displayed successfully
+2026-11-19 18:47:34.468 [main] INFO  TC004_SearchProductTest - Browser closed successfully
+2026-11-19 18:47:36.909 [main] INFO  TC005_AddToCartPageTest - Browser launched successfully: chrome
+2026-11-19 18:47:36.910 [main] INFO  TC005_AddToCartPageTest - Execution environment: local
+2026-11-19 18:47:36.915 [main] INFO  TC005_AddToCartPageTest - Starting TC005 - Add Product To Cart
+2026-11-19 18:47:38.027 [main] INFO  TC005_AddToCartPageTest - Product added to cart
+2026-11-19 18:47:38.595 [main] INFO  TC005_AddToCartPageTest - Product successfully verified in shopping cart
+2026-11-19 18:47:38.703 [main] INFO  TC005_AddToCartPageTest - Browser closed successfully
+2026-11-19 18:47:41.447 [main] INFO  TC006_EndtoEndTest - Browser launched successfully: chrome
+2026-11-19 18:47:41.447 [main] INFO  TC006_EndtoEndTest - Execution environment: local
+2026-11-19 18:47:41.452 [main] INFO  TC006_EndtoEndTest - Starting TC006 - End To End Purchase Flow
+2026-11-19 18:48:05.883 [main] INFO  TC006_EndtoEndTest - Browser closed successfully
+2026-11-19 19:03:54.719 [main] INFO  TC004_SearchProductTest - Browser launched successfully: chrome
+2026-11-19 19:03:54.722 [main] INFO  TC004_SearchProductTest - Execution environment: local
+2026-11-19 19:03:54.733 [main] INFO  TC004_SearchProductTest - Starting TC004 - Search Product
+2026-11-19 19:03:55.338 [main] INFO  TC004_SearchProductTest - Product search results displayed successfully
+2026-11-19 19:03:55.447 [main] INFO  TC004_SearchProductTest - Browser closed successfully
+2026-11-19 19:03:58.012 [main] INFO  TC005_AddToCartPageTest - Browser launched successfully: chrome
+2026-11-19 19:03:58.015 [main] INFO  TC005_AddToCartPageTest - Execution environment: local
+2026-11-19 19:03:58.023 [main] INFO  TC005_AddToCartPageTest - Starting TC005 - Add Product To Cart
+2026-11-19 19:03:59.148 [main] INFO  TC005_AddToCartPageTest - Product added to cart
+2026-11-19 19:03:59.856 [main] INFO  TC005_AddToCartPageTest - Product successfully verified in shopping cart
+2026-11-19 19:03:59.961 [main] INFO  TC005_AddToCartPageTest - Browser closed successfully
+2026-11-19 19:04:02.764 [main] INFO  TC006_EndtoEndTest - Browser launched successfully: chrome
+2026-11-19 19:04:02.767 [main] INFO  TC006_EndtoEndTest - Execution environment: local
+2026-11-19 19:04:02.774 [main] INFO  TC006_EndtoEndTest - Starting TC006 - End To End Purchase Flow
+2026-11-19 19:04:26.887 [main] INFO  TC006_EndtoEndTest - Browser closed successfully
+2026-11-19 19:07:09.434 [main] INFO  TC004_SearchProductTest - Browser launched successfully: chrome
+2026-11-19 19:07:09.437 [main] INFO  TC004_SearchProductTest - Execution environment: local
+2026-11-19 19:07:09.452 [main] INFO  TC004_SearchProductTest - Starting TC004 - Search Product
+2026-11-19 19:07:09.876 [main] INFO  TC004_SearchProductTest - Product search results displayed successfully
+2026-11-19 19:07:09.972 [main] INFO  TC004_SearchProductTest - Browser closed successfully
+2026-11-19 19:07:11.878 [main] INFO  TC005_AddToCartPageTest - Browser launched successfully: chrome
+2026-11-19 19:07:11.878 [main] INFO  TC005_AddToCartPageTest - Execution environment: local
+2026-11-19 19:07:11.880 [main] INFO  TC005_AddToCartPageTest - Starting TC005 - Add Product To Cart
+2026-11-19 19:07:12.615 [main] INFO  TC005_AddToCartPageTest - Product added to cart
+2026-11-19 19:07:13.144 [main] INFO  TC005_AddToCartPageTest - Product successfully verified in shopping cart
+2026-11-19 19:07:13.231 [main] INFO  TC005_AddToCartPageTest - Browser closed successfully
+2026-11-19 19:07:15.011 [main] INFO  TC006_EndtoEndTest - Browser launched successfully: chrome
+2026-11-19 19:07:15.011 [main] INFO  TC006_EndtoEndTest - Execution environment: local
+2026-11-19 19:07:15.013 [main] INFO  TC006_EndtoEndTest - Starting TC006 - End To End Purchase Flow
+2026-11-19 19:07:38.454 [main] INFO  TC006_EndtoEndTest - Browser closed successfully
+2026-11-19 19:14:05.659 [main] INFO  TC004_SearchProductTest - Browser launched successfully: chrome
+2026-11-19 19:14:05.663 [main] INFO  TC004_SearchProductTest - Execution environment: local
+2026-11-19 19:14:05.680 [main] INFO  TC004_SearchProductTest - Starting TC004 - Search Product
+2026-11-19 19:14:06.149 [main] INFO  TC004_SearchProductTest - Product search results displayed successfully
+2026-11-19 19:14:06.248 [main] INFO  TC004_SearchProductTest - Browser closed successfully
+2026-11-19 19:14:08.739 [main] INFO  TC005_AddToCartPageTest - Browser launched successfully: chrome
+2026-11-19 19:14:08.741 [main] INFO  TC005_AddToCartPageTest - Execution environment: local
+2026-11-19 19:14:08.757 [main] INFO  TC005_AddToCartPageTest - Starting TC005 - Add Product To Cart
+2026-11-19 19:14:09.561 [main] INFO  TC005_AddToCartPageTest - Product added to cart
+2026-11-19 19:14:10.153 [main] INFO  TC005_AddToCartPageTest - Product successfully verified in shopping cart
+2026-11-19 19:14:10.240 [main] INFO  TC005_AddToCartPageTest - Browser closed successfully
+2026-11-19 19:14:12.165 [main] INFO  TC006_EndtoEndTest - Browser launched successfully: chrome
+2026-11-19 19:14:12.166 [main] INFO  TC006_EndtoEndTest - Execution environment: local
+2026-11-19 19:14:12.170 [main] INFO  TC006_EndtoEndTest - Starting TC006 - End To End Purchase Flow
+2026-11-19 19:14:36.196 [main] INFO  TC006_EndtoEndTest - Browser closed successfully
